@@ -6,6 +6,10 @@ public class Main {
         return;
     }
 
+    public static void fillArray(){
+        return;
+    }
+
     public static void returnOne(){
         return;
     }
