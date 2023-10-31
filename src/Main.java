@@ -1,18 +1,26 @@
+import java.util.Random;
+
 public class Main {
 
+    private static Random randomGenerator = new Random();
+    private static int randomNum;
 
-
-    public static void main(){
-        return;
+    public static void main(String[] args){
+        while(true) {
+            randomNum = randomGenerator.nextInt(10) + 1;    //scaffold
+            System.out.println(randomNum);                         //scaffold
+        }
     }
 
 
-    /*
-    * A method called, fillArray, that uses a for loop to fill the array test with random integers between
-    * the values of 1 and 10 inclusive.
-     */
-    public static void fillArray(){
-        return;
+
+    public static int[] fillArray(int a){
+        int[] randomArr = new int[a];
+
+        for (int i = 0; i < randomArr.length; i++) {
+            randomArr[i] = randomGenerator.nextInt(10) + 1;
+        }
+        return randomArr;
     }
 
 
@@ -34,7 +42,7 @@ public class Main {
 
 
     /*
-    * (5 points) A method called, sumElements, that uses a for loop to sum all of the elements of the array, test,
+    * (5 points) A method called, sumElements, that uses a for loop to sum all the elements of the array, test,
     * and prints the result to the terminal window ONE time.
     */
     public static void sumElements(){
